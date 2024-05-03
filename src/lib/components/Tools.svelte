@@ -7,6 +7,7 @@
 	import GisCoordSystem from '~icons/gis/coord-system';
 	import FluentSelectObject24Regular from '~icons/fluent/select-object-24-regular';
 	import FluentText12Regular from '~icons/fluent/text-12-regular';
+	import ArrowImport24Regular from '~icons/fluent/arrow-import-24-regular';
 	import Tool from './Tool.svelte';
 </script>
 
@@ -31,6 +32,9 @@
 		</Tool>
 		<Tool id="triangle" disabled={true}>
 			<TablerTrianglePlus2 class="p-2" />
+		</Tool>
+		<Tool id="photo">
+			<ArrowImport24Regular class="p-2" />
 		</Tool>
 	</div>
 	<div>

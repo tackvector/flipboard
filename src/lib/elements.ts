@@ -6,7 +6,7 @@ import Text from "./components/Text.svelte"
 export type BaseElement = {
     name: string,
     position: [x: number, y: number],
-    rotation: number,
+
     fill: string,
     outline: [size: number, color: string],
     lockedRatio: boolean,
@@ -35,7 +35,13 @@ export type TextElement = BaseElement & {
     size: number,
 }
 
-export type Elements = RectElement | EllipseElement | TextElement
+export type PhotoElement = BaseElement & {
+    type: "file", // don't know if this makes sense
+    test: string,
+    size: number,
+}
+
+export type Elements = RectElement | EllipseElement | TextElement | PhotoElement
 
 let doc = localStorage.getItem('doc');
 if (!doc) {
